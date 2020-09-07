@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/editTextLabel"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Label"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextfat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constrainedHeight="true"/>
+
+    <EditText
+        android:id="@+id/editTextfat"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Fat (in grams)"
+        android:inputType="numberDecimal"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constrainedHeight="true"/>
+
+    <EditText
+        android:id="@+id/EditTextfibre"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Fibre (in grams)"
+        android:inputType="numberDecimal"
+        android:paddingLeft="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextsugar"
+        app:layout_constraintEnd_toStartOf="@+id/EditTextcarbs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLabel"
+        app:layout_constrainedHeight="true"/>
+
+    <EditText
+        android:id="@+id/EditTextcarbs"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Carbs (in grams)"
+        android:inputType="numberDecimal"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextfibre"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfat"
+        app:layout_constrainedHeight="true"/>
+
+    <EditText
+        android:id="@+id/EditTextsugar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Sugar (in grams)"
+        android:inputType="numberDecimal"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/EditTextsalt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextfibre"
+        app:layout_constrainedHeight="true"/>
+
+    <EditText
+        android:id="@+id/EditTextsalt"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Salt (in grams)"
+        android:inputType="numberDecimal"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextsugar"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextcarbs"
+        app:layout_constrainedHeight="true"/>
+
+    <EditText
+        android:id="@+id/EditTextprotein"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Protein (in grams)"
+        android:inputType="numberDecimal"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/EditTextcals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextsugar"
+        app:layout_constrainedHeight="true"/>
+
+    <EditText
+        android:id="@+id/EditTextcals"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Calories"
+        android:inputType="number"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextprotein"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextsalt"
+        app:layout_constrainedHeight="true"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_btn"
+        android:text="Submit"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBack"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextcals"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_btn"
+        android:text="Back"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextprotein"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

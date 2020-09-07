@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1079796411405",
+    "firebase_url": "https://mycals-f2acc.firebaseio.com",
+    "project_id": "mycals-f2acc",
+    "storage_bucket": "mycals-f2acc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079796411405:android:cfced05c67dc028bd8f944",
+        "android_client_info": {
+          "package_name": "com.example.mycals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079796411405-mqntk4mta8bck8a73utpnp3vsb479dsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcB0souV_62ZtYMtj8LMSnV9AkBL9rX4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079796411405-mqntk4mta8bck8a73utpnp3vsb479dsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
